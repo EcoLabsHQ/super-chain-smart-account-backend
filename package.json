@@ -52,7 +52,8 @@
     "redis": "^4.7.0",
     "siwe": "^2.3.2",
     "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "tsx": "^4.19.2"
   },
   "engines": {
     "node": ">=16"
@@ -67,7 +68,6 @@
     "@types/swagger-jsdoc": "^6.0.4",
     "@types/swagger-ui-express": "^4.1.8",
     "ts-node": "^10.9.2",
-    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
 }
