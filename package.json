@@ -53,7 +53,18 @@
     "siwe": "^2.3.2",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
-    "tsx": "^4.19.2"
+    "tsx": "^4.19.2",
+    "@graphql-mesh/utils": "^0.102.13",
+    "@graphql-mesh/runtime": "^0.103.12",
+    "@graphql-mesh/types": "^0.102.13",
+    "@graphql-mesh/cache-localforage": "^0.102.13",
+    "@graphql-mesh/graphql": "^0.102.16",
+    "@graphql-mesh/merger-bare": "^0.102.11",
+    "@graphql-mesh/http": "^0.103.12",
+    "@graphql-mesh/store": "^0.102.13",
+    "@graphql-mesh/cross-helpers": "^0.4.10",
+    "@whatwg-node/fetch": "^0.9.23",
+    "@graphql-yoga/plugin-persisted-operations": "^3.13.6"
   },
   "engines": {
     "node": ">=16"
