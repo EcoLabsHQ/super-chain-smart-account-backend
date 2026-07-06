@@ -21,6 +21,8 @@ export async function getBadges(req: Request, res: Response) {
 }
 
 export async function claimBadges(req: Request, res: Response) {
+  return res.status(503).json({ error: "Badge claims are temporarily disabled" });
+
   res.setTimeout(60000 * 5);
   const account = req.params.account as string;
   if (!account) {

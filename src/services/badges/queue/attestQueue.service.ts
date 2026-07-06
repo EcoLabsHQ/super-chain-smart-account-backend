@@ -39,9 +39,17 @@ export class AttestQueueService {
         });
 
 
-        if (process.env.ATTEST_KEY == 'REMOTE') {
-            setInterval(() => this.pollAndProcess(), 5000);
-        }
+        // Badge calculation disabled — drain queue without executing jobs
+        this.queue.obliterate({ force: true }).then(() => {
+            console.log('[AttestQueue] Queue obliterated. Badge processing is disabled.');
+        }).catch((err) => {
+            console.error('[AttestQueue] Failed to obliterate queue:', err);
+        });
+
+        // Polling disabled intentionally
+        // if (process.env.ATTEST_KEY == 'REMOTE') {
+        //     setInterval(() => this.pollAndProcess(), 5000);
+        // }
     }
 
     private async pollAndProcess() {
